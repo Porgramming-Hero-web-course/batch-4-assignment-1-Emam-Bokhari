@@ -2,7 +2,7 @@
     class Car {
 
         constructor(public make: string, public model: string, public year: number) {
-           
+
         }
 
         getCarAge(): number {
@@ -13,5 +13,5 @@
 
     const car = new Car("Honda", "Civic", 2018);
     const result = car.getCarAge()
-    console.log(result);
+    console.log(result)
 }
