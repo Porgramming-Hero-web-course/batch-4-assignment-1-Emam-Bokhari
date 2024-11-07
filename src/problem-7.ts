@@ -1,13 +1,8 @@
 {
     class Car {
-        make: string;
-        model: string;
-        year: number;
 
-        constructor(make: string, model: string, year: number) {
-            this.make = make;
-            this.model = model;
-            this.year = year;
+        constructor(public make: string, public model: string, public year: number) {
+           
         }
 
         getCarAge(): number {
