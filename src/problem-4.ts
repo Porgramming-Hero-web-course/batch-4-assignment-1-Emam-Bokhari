@@ -1,16 +1,16 @@
 {
-    type CircleArea = {
+    type Circle = {
         shape: "circle";
         radius: number;
     };
 
-    type RectangleArea = {
+    type Rectangle = {
         shape: "rectangle";
         width: number;
         height: number;
     };
 
-    const calculateShapeArea = (shape: CircleArea | RectangleArea): number | undefined => {
+    const calculateShapeArea = (shape: Circle | Rectangle): number | undefined => {
         if (shape.shape === "circle") {
             return Number((Math.PI * shape.radius * shape.radius).toFixed(2));
         } else if (shape.shape === "rectangle") {
