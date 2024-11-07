@@ -4,7 +4,7 @@
         const convertLowercaseSentence = sentence.toLowerCase();
         const convertLowercaseWord = word.toLowerCase();
      
-        const replaceRegxInSentence = convertLowercaseSentence.replace(/[.,!?]/g, "");
+        const replaceRegxInSentence = convertLowercaseSentence.replace(/[.!#@*$&^%~`+=-_|'":;]/g, "");
     
         const splitSentence = replaceRegxInSentence.split(" ");
     
